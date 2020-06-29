@@ -3,8 +3,43 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Meowsy</title>
+		<style>
+body {
+	font-family: 'Helvetica';
+	color: #464646;
+	background: #f5dbb3;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	border: 1px solid #ffecc4;
+	max-width: 700px;
+	margin: 30px auto;
+	padding: 30px;
+	background: white;
+	text-align: center;
+}
+
+.img-container {
+	width: 70%;
+	margin: 10px auto;
+}
+
+.img-container img {
+	width: 100%;
+}
+		</style>
 	</head>
 	<body>
-		<h1>Hello there!</h1>
+		<div class="container">
+			<h1>Poszukiwany</h1>
+			<div class="img-container"><img src="{{ gangster.photo }}" /></div>
+			<div>Nazwa: <strong>{{ gangster.name }}</strong></div>
+			<div>Nagroda: <strong>{{ gangster.price }}</strong></div>
+			<div>Opis: <strong>{{ gangster.description }}</strong></div>
+		</div>
+
+
 	</body>
 </html>
